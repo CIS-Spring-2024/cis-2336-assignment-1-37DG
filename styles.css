@@ -36,19 +36,27 @@ nav h1 {
 }
 
 header {
-    display: inline-flex;
     background-color: rgb(117, 213, 184);
-    height: 100px;
+    height: 120px;
     width: 100%;
     text-align: left;
     padding: 10px;
     padding-bottom: 5px;
 }
+header div {
+    min-width: min-content;
+    display: inline-block;
+}
+#title h1 {
+    color: black;
+    padding-top: 40px;
+    padding-left: 0px;
+}
 header #dailydeal {
-    transform: translateY(-5px);
-    margin-left: 40%;
-    padding-left: 5px;
-    padding-right: 5px;
+    float: right;
+    margin-right: 8%;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 20px;
     background-color: rgb(131, 236, 205);
 }
@@ -57,7 +65,7 @@ header #dailydeal h1 {
 }
 header #dailydeal h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18pt;
+    font-size: 20pt;
     font-weight: 900;
     letter-spacing: -2px;
 } 
@@ -71,17 +79,6 @@ h1 {
     font-size: 45pt;
     letter-spacing: 1px;
 }
-#title h1 {
-    color: black;
-    padding-top: 20px;    
-}
-#title h2 {
-    color: black;
-    padding-top: 10px;
-    font-family:"League Gothic", sans-serif;
-    font-size: 35pt;
-    letter-spacing: 1px;
-}
 
 #main_pic img {
     height: 720px;
@@ -91,7 +88,7 @@ h1 {
 
 #ad_boxes {
     text-align: center;
-    height: 700px;
+    height: fit-content;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -102,7 +99,7 @@ h1 {
     padding: 10px;
     max-width: 300px;
 }
-#ad_boxes section {
+#ad_boxes div {
     width: 30%;
     height: 400px;
     margin: 10px;
@@ -126,6 +123,96 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20pt;
 }
+
+#non-interactive_menu {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 80px;
+    background-color: rgb(131, 236, 205);
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+#non-interactive_menu h1 {
+    display: inline-block;
+    margin-left: 7%;
+    font-size: 50pt;
+}
+#non-interactive_menu h2 {
+    display: inline-block;
+    transform: translateY(-6px);
+    margin-left: 70px;
+    font-size: 16pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#non-interactive_menu #menu_description h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 25pt;
+    letter-spacing: -3px;
+    margin-bottom: 10px;
+}
+#non-interactive_menu #menu_description p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18pt;
+}
+#non-interactive_menu #menu_description {
+    margin: 20px;
+}
+#non-interactive_menu #menu_description div {
+
+    background-color: rgb(140, 255, 220);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 15%;
+    margin-right: 10%;
+    display: inline-block;
+    width: 20%;
+}
+#non-interactive_menu table {
+    margin-top: 20px;
+    margin-left: 23%;
+    background-color: rgb(140, 255, 220);
+    border: 5px;
+    border-style: double;
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 20pt;
+    padding: 4px;
+    border-collapse: collapse;
+}
+#non-interactive_menu #menu_header {
+    border: 5px;
+    border-style: dashed;
+    width: 50%;
+    height: 100px;
+    margin-left: 23%;
+
+    margin-top: 20px;
+    background-color: rgb(130, 255, 210);
+    border-radius: 10px;
+    font-size: 20pt;
+}
+#non-interactive_menu th {
+    border: 3px;
+    border-style: double;
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 20pt;
+}
+#non-interactive_menu #onlineorder {
+    text-align: center;
+}
+#non-interactive_menu #onlineorder a {
+    font-size: 20pt;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+
+
 
 footer {
     background-color: white;

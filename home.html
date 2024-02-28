@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <header>
-    <section id="title">
+    <div id="title">
         <h1>University of Houston - Sugar Land Cafeteria:</h1>
-    </section>
-    <section id="dailydeal">
+    </div>
+    <div id="dailydeal">
         <h1>This month:</h1>
         <h3>BUY TWO BITES</h3>
         <h3>GET. ONE. FREE.</h3>
-    </section>
+    </div>
 </header>
 <nav id="navbar">
     <h1>VOYAGER HALL</h1>
@@ -24,11 +24,11 @@
     <a href="bio.html">ABOUT</a>
 </nav>
 <body>
-    <div id="main_pic">
+    <section id="main_pic">
         <img src="americana.jpg" alt="Interior of restaurant building">
-    </div>
-    <div id="ad_boxes">
-        <section id="dining">
+    </section>
+    <section id="ad_boxes">
+        <div id="dining">
             <h2>Dining Options</h2>
             <img src="clipart.avif" alt="Icon of plate and cutlery">
             <p>
@@ -38,8 +38,8 @@
                 more conventional and filling dishes, brings even more options 
                 to your table.
             </p>
-        </section>
-        <section id="reservations">
+        </div>
+        <div id="reservations">
             <h2>Reservations</h2>
             <img src="celebrationclipart.png" alt="Icon of a party popper"">
             <p>
@@ -49,8 +49,8 @@
                 offer personalized amenities for birthdays, graduation 
                 celebrations, and many holidays.
             </p>
-        </section>
-        <section id="relaxing">
+        </div>
+        <div id="relaxing">
             <h2>Relaxing Interior</h2>
             <img src="relaxingclipart.png" alt="Icon of an umbrella and a beach chair">
             <p>
@@ -60,20 +60,26 @@
                 ace that practice test or nail that essay. Just take a table, alone
                 or as a group, and enjoy your stay!
             </p>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <div id="non-interactive_menu">
+    <section id="non-interactive_menu">
         <h1>Ordering Information</h1>
-        <p>Voyager Hall offers a varied menu for students at the University of Houston - Sugar Land campus.</p>
-        <p>
-            Bites - Small dishes that are both fast to make and easy to eat. Ideal for the busy student right before or between classes.
-            Meals - Filling dishes that are made to be eaten inside Voyager Hall. Ideal for early students or those finished with classes.
-        </p>
+        <h2>Voyager Hall offers a varied menu for students at the University of Houston - Sugar Land campus.</h2>
+        <div id="menu_description">
+            <div id="bites">
+                <h3>Bites</h3>
+                <p>Small dishes that are both fast to make and easy to eat. Ideal for the busy student right before or between classes.</p>
+            </div>
+            <div id="meals">
+                <h3>Meals</h3>
+                <p>Filling dishes that are made to be eaten inside Voyager Hall. Ideal for early students or those finished with classes.</p>
+            </div>
+        </div>
         <table>
             <tr>
-                <th>Bites</th>
-                <th>Meals</th>
+                <th id="menu_header">Bites</th>
+                <th id="menu_header">Meals</th>
             </tr>
             <tr>
                 <th>Thick-cut French Fries</th>
@@ -88,8 +94,10 @@
                 <th>Spicy Meatball Sub</th>
             </tr>
         </table>
-    </div>
-    <a href="order.html">An online ordering menu is now available!</a>
+        <div id="onlineorder">
+            <a href="order.html">An online ordering menu is now available here!</a>
+        </div>
+    </section>
 
     <div id="contact">
         <h2>Want to stay up to date on Voyager Hall? Interested in special deals and event? Subscribe to the weekly newsletter:</h2>
