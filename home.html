@@ -25,12 +25,12 @@
 </nav>
 <body>
     <section id="main_pic">
-        <img src="americana.jpg" alt="Interior of restaurant building">
+        <img src="assets/americana.jpg" alt="Interior of restaurant building">
     </section>
     <section id="ad_boxes">
         <div id="dining">
             <h2>Dining Options</h2>
-            <img src="clipart.avif" alt="Icon of plate and cutlery">
+            <img src="assets/clipart.avif" alt="Icon of plate and cutlery">
             <p>
                 We take pride in our menu. Originally a fast food experience,
                 our food preparation is optimized to bring your food quickly 
@@ -41,7 +41,7 @@
         </div>
         <div id="reservations">
             <h2>Reservations</h2>
-            <img src="celebrationclipart.png" alt="Icon of a party popper"">
+            <img src="assets/celebrationclipart.png" alt="Icon of a party popper"">
             <p>
                 Celebrating a birthday or the completion of a group project?
                 Reserve a table (or multiple!) and enjoy a comfortable
@@ -52,7 +52,7 @@
         </div>
         <div id="relaxing">
             <h2>Relaxing Interior</h2>
-            <img src="relaxingclipart.png" alt="Icon of an umbrella and a beach chair">
+            <img src="assets/relaxingclipart.png" alt="Icon of an umbrella and a beach chair">
             <p>
                 Perfect for studying or just plain relaxing, our interior 
                 provides a comfortable environment to assist in whatever you need.
@@ -100,11 +100,24 @@
     </section>
 
     <div id="contact">
-        <h2>Want to stay up to date on Voyager Hall? Interested in special deals and event? Subscribe to the weekly newsletter:</h2>
-        <section>
-            <input type="email" required>
-            <input type="submit">
-        </section>
+        <h2>Want to stay up to date on Voyager Hall? Subscribe to the weekly newsletter:</h2>
+        <div>
+            <form method="post">
+                <fieldset style="border-width: 0px;">
+                    <input type="email" required id="email" placeholder="E-Mail">
+                    <input type="submit" id="submit_button">
+                </fieldset>
+            </form>
+        </div>
+        <div id="newsletter_list">
+            <h3>The newsletter includes:</h3>
+            <ul>
+                <li>Changes to Voyager Hall</li>
+                <li>Exclusive deals for subscribers</li>
+                <li>Events and holiday celebrations</li>
+                <li>And much more!</li>
+            </ul>
+        </div>
     </div>
 </body>
 <footer>
@@ -112,10 +125,19 @@
         This website and its owner are unaffiliated with the University of Houston.
         All information presented on this page and its linked subpages is false and 
         not made by any representative of the University of Houston administration.
-    </p>
-    <p>
-        The UH signature mark is a registered trademark of the University of Houston.
+        This is a work of fiction. Any resemblance to a subject, real or fake, 
+        is purely coincidental.
     </p>
 </footer>
 
+<script>
+    document.querySelector("#onlineorder a").addEventListener("click", function(e) {
+        e.preventDefault();
+        alert('The online menu has not been implemented yet. Try again later.');
+    });
+    document.getElementById("submit_button").addEventListener("click", function(e) {
+        e.preventDefault();
+        alert('Newsletter registrations are currently disabled. Try again later.');
+    });
+</script>
 </html>

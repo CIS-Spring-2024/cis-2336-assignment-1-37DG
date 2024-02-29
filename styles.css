@@ -211,13 +211,67 @@ h1 {
     font-weight: 600;
 }
 
-
-
+#contact {
+    margin-top: 150px;
+    margin-left: 10px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+#contact h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+#contact #email {
+    width: 25%;
+    height: 30px;
+    margin: 30px;
+    margin-right: 10px;
+    background-color: rgb(130, 255, 210);
+    border-color: rgb(117, 213, 184);
+    border-style: groove;
+}
+#contact #submit_button {
+    border-radius: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(130, 255, 210);
+}
+#contact #lewsletter_list {
+    text-align: center;
+    display: block;
+}
+#contact #newsletter_list h3 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+#contact #newsletter_list ul {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding-left: 40px;
+    font-size: 20pt;
+}
+#contact #newsletter_list li {
+    margin: 5px;
+    text-align: left;
+    margin-left: 38%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18pt;
+    font-weight: 200;
+}
 
 footer {
-    background-color: white;
-    color: white;
+    text-align: center;
+    background-color: rgb(98, 177, 154);
     font-size: small;
-    padding: 25px;
-    font-family: "Source Sans Pro", sans-serif;
+    padding: 50px;
+    padding-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 8pt;
 }
