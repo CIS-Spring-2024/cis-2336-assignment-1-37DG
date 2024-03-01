@@ -1,3 +1,5 @@
+/* HOME */
+
 * {
     margin: 0px;
     padding: 0px;
@@ -274,4 +276,46 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 300;
     font-size: 8pt;
+}
+
+/* BIO */
+
+#bio {
+    background-color: rgb(131, 236, 205);
+    margin: 50px;
+    padding-top: 80px;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#bio img {
+    background-color: white;
+    border-radius: 50%;
+}
+#bio p {
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 16pt;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#bio #about {
+    margin-top: 100px;
+}
+#bio #about p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+#bio #about h3 {
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 16pt;
+    letter-spacing: -1px;
 }
