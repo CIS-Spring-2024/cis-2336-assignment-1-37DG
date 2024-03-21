@@ -9,7 +9,7 @@
 </head>
 <header>
     <div id="title">
-        <h1>University of Houston -</h1>
+        <h1>University of Houston </h1>
         <h1>Sugar Land Cafeteria</h1>
     </div>
 </header>
@@ -65,12 +65,14 @@
     </section>
 
     <section id="non-interactive_menu">
-        <h1>Ordering Information</h1>
-        <h2>Voyager Hall offers a varied menu for students at the University of Houston - Sugar Land campus.</h2>
+        <div id="order_header">
+            <h1>Ordering Information</h1>
+            <h2>Voyager Hall offers a varied menu for students at the University of Houston - Sugar Land campus.</h2>    
+        </div>
         <div id="menu_description">
             <div id="bites">
                 <h3>Bites</h3>
-                <p>Small dishes that are both fast to make and easy to eat. Ideal for the busy student right before or between classes.</p>
+                <p>Small dishes that are both fast to make and easy to eat. Ideal for the busy student before or between classes.</p>
             </div>
             <div id="meals">
                 <h3>Meals</h3>
@@ -135,6 +137,29 @@
 
 <script>
 
+    var width;
+    window.onresize = window.onload = function() {
+        width = this.innerWidth;
+        console.log(width);
+
+        boxList = document.querySelectorAll("#ad_boxes div");
+
+        if (width < 600) {
+
+        }
+
+        /*
+        if (width < 600) {
+            for (box of boxList) {
+                box.style.backgroundColor = "black";
+            }
+        } else {
+            for (box of boxList) {
+                box.style.backgroundColor = "red";
+            }
+        }
+        */
+    }
 
     document.querySelector("#onlineorder a").addEventListener("click", function(e) {
         e.preventDefault();

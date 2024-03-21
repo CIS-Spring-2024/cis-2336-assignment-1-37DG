@@ -4,6 +4,23 @@
     margin: 0px;
     padding: 0px;
 }
+
+/* HEADER */
+
+header {
+    min-height: fit-content;
+    background-color: rgb(117, 213, 184);
+    width: 100%;
+    text-align: left;
+    padding: 35px 10px 15px 10px;
+}
+header h1 {
+    white-space: pre;
+    display: inline-block;
+}
+
+/* NAV */
+
 nav {
     display: inline-flex;
     transform: translateY(-15px);
@@ -27,7 +44,8 @@ nav a {
     text-decoration: none;
 }
 nav h1 {
-    font-size: 30pt;
+    font-size: 26pt;
+    margin-top: 2px;
     margin-left: 10px;
     margin-right: 30px;
 }
@@ -37,17 +55,7 @@ nav h1 {
     padding: 4px;
 }
 
-header {
-    min-height: fit-content;
-    background-color: rgb(117, 213, 184);
-    width: 100%;
-    text-align: left;
-    padding: 35px 10px 15px 10px;
-}
-header h1 {
-    white-space: pre;
-    display: inline-block;
-}
+/* DEAL */
 
 body #dailydeal {
     border-radius: 20px;
@@ -63,6 +71,9 @@ body #dailydeal h3 {
     font-weight: 900;
     letter-spacing: -2px;
 } 
+
+/* BODY */
+
 body {
     background-color: rgb(117, 213, 184);
 }
@@ -80,19 +91,21 @@ h1 {
     object-fit: cover;
 }
 
+/* FEATURES */
+
 #ad_boxes {
     text-align: center;
     height: fit-content;
     width: 100%;
-    padding: 10px 0% 80px 0%;
+    padding: 60px 0% 0% 0%;
 }
 #ad_boxes img {
     padding: 10px;
     max-width: 300px;
 }
 #ad_boxes div {
-    width: 30%;
-    height: 400px;
+    max-width: 400px;
+    height: 800px;
     display: inline-block;
 }
 #ad_boxes h2 {
@@ -102,17 +115,17 @@ h1 {
     color: black;
 }
 #ad_boxes p {
-    margin-top: 15px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 15px 15px 0px 15px;
     background-clip: padding-box;
     background-color: rgb(131, 236, 205);
     border-radius: 20px;
     text-wrap: pretty;
     padding: 8px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20pt;
+    font-size: 18pt;
 }
+
+/* MENU */
 
 #non-interactive_menu {
     margin-left: 10px;
@@ -134,6 +147,22 @@ h1 {
     font-size: 16pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#non-interactive_menu #menu_description {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+#non-interactive_menu #menu_description div {
+    display: inline-block;
+    
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 400px;
+}
 #non-interactive_menu #menu_description h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
@@ -144,24 +173,11 @@ h1 {
 #non-interactive_menu #menu_description p {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18pt;
+    font-size: 14pt;
 }
-#non-interactive_menu #menu_description {
-    margin: 20px;
-}
-#non-interactive_menu #menu_description div {
 
-    background-color: rgb(140, 255, 220);
-    border-radius: 10px;
-    padding: 10px;
-    margin-left: 15%;
-    margin-right: 10%;
-    display: inline-block;
-    width: 20%;
-}
 #non-interactive_menu table {
-    margin-top: 20px;
-    margin-left: 23%;
+    margin: auto;
     background-color: rgb(140, 255, 220);
     border: 5px;
     border-style: double;
@@ -169,13 +185,11 @@ h1 {
     height: 200px;
     border-radius: 10px;
     font-size: 20pt;
-    padding: 4px;
     border-collapse: collapse;
 }
 #non-interactive_menu #menu_header {
     border: 5px;
     border-style: dashed;
-    width: 50%;
     height: 100px;
     margin-left: 23%;
 
@@ -187,7 +201,6 @@ h1 {
 #non-interactive_menu th {
     border: 3px;
     border-style: double;
-    width: 50%;
     height: 300px;
     border-radius: 10px;
     font-size: 20pt;
@@ -201,9 +214,10 @@ h1 {
     font-weight: 600;
 }
 
+/* CONTACT */
+
 #contact {
     margin-top: 150px;
-    margin-left: 10px;
     width: 100%;
     height: fit-content;
     text-align: center;
@@ -232,7 +246,7 @@ h1 {
     vertical-align: middle;
     background-color: rgb(130, 255, 210);
 }
-#contact #lewsletter_list {
+#contact #newsletter_list {
     text-align: center;
     display: block;
 }
@@ -243,7 +257,6 @@ h1 {
 #contact #newsletter_list ul {
     margin-top: 10px;
     margin-bottom: 100px;
-    padding-left: 40px;
     font-size: 20pt;
 }
 #contact #newsletter_list li {
@@ -270,7 +283,7 @@ footer {
 
 #bio {
     background-color: rgb(131, 236, 205);
-    margin: 50px;
+    margin: 10px;
     padding-top: 80px;
     border-radius: 30px;
     text-align: center;
@@ -285,8 +298,7 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 16pt;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: auto;
 }
 
 #bio #about {
@@ -296,8 +308,7 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 14pt;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: auto;
 
 }
 #bio #about h3 {
