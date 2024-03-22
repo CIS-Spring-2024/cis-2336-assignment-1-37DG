@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League+Gothic">
     <link rel="stylesheet" href="styles.css">
 </head>
-<header>
+<header class="layer1">
     <div id="title">
         <h1>University of Houston </h1>
         <h1>Sugar Land Cafeteria</h1>
     </div>
 </header>
-<nav id="navbar">
+<nav id="navbar" class="layer1">
     <h1>VOYAGER HALL</h1>
     <a href="home.html">HOME</a>
     <p id="divider">|</p>
     <a href="bio.html">ABOUT</a>
 </nav>
-<body>
-    <div id="dailydeal">
+<body class="layer1">
+    <div id="deal" class="layer2">
         <h3>Monthly deal:</h3>
         <h3>BUY TWO BITES</h3>
         <h3>GET. ONE. FREE.</h3>
@@ -32,7 +32,7 @@
         <div id="dining">
             <h2>Dining Options</h2>
             <img src="assets/clipart.avif" alt="Icon of plate and cutlery">
-            <p>
+            <p class="layer2">
                 We take pride in our menu. Originally a fast food experience,
                 our food preparation is optimized to bring your food quickly 
                 without compromising taste. Our newly revamped menu, containing 
@@ -43,7 +43,7 @@
         <div id="reservations">
             <h2>Reservations</h2>
             <img src="assets/celebrationclipart.png" alt="Icon of a party popper"">
-            <p>
+            <p class="layer2">
                 Celebrating a birthday or the completion of a group project?
                 Reserve a table (or multiple!) and enjoy a comfortable
                 environment in a convenient on-campus location. We also 
@@ -54,7 +54,7 @@
         <div id="relaxing">
             <h2>Relaxing Interior</h2>
             <img src="assets/relaxingclipart.png" alt="Icon of an umbrella and a beach chair">
-            <p>
+            <p class="layer2">
                 Perfect for studying or just plain relaxing, our interior 
                 provides a comfortable environment to assist in whatever you need.
                 Order some finger food and a drink to give you the energy to 
@@ -64,10 +64,10 @@
         </div>
     </section>
 
-    <section id="non-interactive_menu">
+    <section id="non-interactive_menu" class="layer2">
         <div id="order_header">
             <h1>Ordering Information</h1>
-            <h2>Voyager Hall offers a varied menu for students at the University of Houston - Sugar Land campus.</h2>    
+            <h3>Voyager Hall offers a varied menu for students at the University of Houston - Sugar Land campus.</h3>    
         </div>
         <div id="menu_description">
             <div id="bites">
@@ -81,8 +81,8 @@
         </div>
         <table>
             <tr>
-                <th id="menu_header">Bites</th>
-                <th id="menu_header">Meals</th>
+                <th id="menu_header" class="layer3">Bites</th>
+                <th id="menu_header" class="layer3">Meals</th>
             </tr>
             <tr>
                 <th>Thick-cut French Fries</th>
@@ -107,13 +107,13 @@
         <div>
             <form method="post">
                 <fieldset style="border-width: 0px;">
-                    <input type="email" required id="email" placeholder="E-Mail">
-                    <input type="submit" id="submit_button">
+                    <input type="email" required id="email" class="layer3" placeholder="E-Mail">
+                    <input type="submit" id="submit_button" class="layer3">
                 </fieldset>
             </form>
         </div>
         <div id="newsletter_list">
-            <h3>The newsletter includes:</h3>
+            <p>The newsletter includes:</p>
             <ul>
                 <li>Changes to Voyager Hall</li>
                 <li>Exclusive deals for subscribers</li>
@@ -136,38 +136,13 @@
 </footer>
 
 <script>
-
-    var width;
-    window.onresize = window.onload = function() {
-        width = this.innerWidth;
-        console.log(width);
-
-        boxList = document.querySelectorAll("#ad_boxes div");
-
-        if (width < 600) {
-
-        }
-
-        /*
-        if (width < 600) {
-            for (box of boxList) {
-                box.style.backgroundColor = "black";
-            }
-        } else {
-            for (box of boxList) {
-                box.style.backgroundColor = "red";
-            }
-        }
-        */
-    }
-
     document.querySelector("#onlineorder a").addEventListener("click", function(e) {
         e.preventDefault();
         alert('The online menu has not been implemented yet. Try again later.');
     });
     document.getElementById("submit_button").addEventListener("click", function(e) {
         e.preventDefault();
-        alert('Newsletter registrations are currently disabled. Try again later.');
+        alert('Newsletter registration submitted!');
     });
 </script>
 </html>
