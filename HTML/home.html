@@ -136,13 +136,52 @@
 </footer>
 
 <script>
+    /* Interactive links */
+    let links = document.querySelectorAll("a");
+    links.forEach(element => {
+        element.addEventListener("mouseover", function(e) {
+            this.style.color = "yellow";
+        });
+        element.addEventListener("mouseout", function(e) {
+            this.style.color = "";
+        })
+    });
+
+    /* Interactive table */
+    let telements = document.querySelectorAll("th");
+    telements.forEach(element => {
+        element.addEventListener("mouseover", function(e) {
+            this.style.backgroundColor = "rgb(153,255,230)";
+        });
+        element.addEventListener("mouseout", function(e) {
+            this.style.backgroundColor = "";
+        })
+    });
+
+    /* Interactive submit button */
+    document.querySelector("#submit_button").addEventListener("mouseover", function(e) {
+        this.style.backgroundColor = "rgb(153,255,230)";
+    });
+    document.querySelector("#submit_button").addEventListener("mouseout", function(e) {
+        this.style.backgroundColor = "";
+    });
+
+    /* Form response handling and interaction */
     document.querySelector("#onlineorder a").addEventListener("click", function(e) {
         e.preventDefault();
         alert('The online menu has not been implemented yet. Try again later.');
     });
     document.getElementById("submit_button").addEventListener("click", function(e) {
         e.preventDefault();
-        alert('Newsletter registration submitted!');
+        let email = document.querySelector("#email");
+        if (email.value) {
+            alert('Newsletter registration submitted!');
+            email.style.borderColor = "";
+        }
+        else {
+            alert('Please enter your E-Mail.')
+            email.style.borderColor = "red";
+        }
     });
 </script>
 </html>
