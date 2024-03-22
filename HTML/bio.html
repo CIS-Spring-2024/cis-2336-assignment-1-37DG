@@ -56,4 +56,17 @@
         is purely coincidental.
     </p>
 </footer>
+
+<script>
+    /* Interactive links */
+    let links = document.querySelectorAll("a");
+    links.forEach(element => {
+        element.addEventListener("mouseover", function(e) {
+            this.style.color = "yellow";
+        });
+        element.addEventListener("mouseout", function(e) {
+            this.style.color = "";
+        })
+    });
+</script>
 </html>
